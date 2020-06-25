@@ -1,6 +1,6 @@
 import {ApolloServer} from 'apollo-server-express'
-import {typeDefs} from '../typeDefs/typedefs'
-import {resolvers} from '../resolvers/resolvers'
+import {typeDefs} from './typeDefs/typedefs'
+import {resolvers} from './resolvers/resolvers'
 import express from 'express'
 import mongoose from 'mongoose'
 
