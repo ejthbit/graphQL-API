@@ -11,6 +11,7 @@ const startApolloServer = () => {
     const server = new ApolloServer({typeDefs, resolvers})
     server.applyMiddleware({app})
     mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true, useUnifiedTopology: true})
+    mongoose.set('useCreateIndex', true)
 
     app.listen(process.env.RUNNING_PORT, () => {
         console.log(`🚀🌑 Apollo Server is running at http://localhost:${process.env.RUNNING_PORT}/graphql`)
