@@ -1,0 +1,24 @@
+{
+    "name": "graphQL-API",
+    "version": "1.0.0",
+    "description": "GraphQL API build using node, express, graphql.",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node src/app.js"
+    },
+    "repository": "https://github.com/ejthbit/graphQL-API.git",
+    "author": "Filip Kotek <ejthbit@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/cli": "^7.10.3",
+        "@babel/core": "^7.10.3",
+        "@babel/node": "^7.10.3",
+        "@babel/preset-env": "^7.10.3",
+        "apollo-server-express": "^2.15.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "graphql": "^15.1.0",
+        "mongoose": "^5.9.20",
+        "nodemon": "^2.0.4"
+    }
+}
